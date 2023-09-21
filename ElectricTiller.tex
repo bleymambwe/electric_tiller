@@ -671,7 +671,7 @@ Overall, compound DC motors can be used in settings where both shunt and series 
  \newline
  \vspace*{3pt}
  
- \textbf{Induction AC Motors:} Also referred to as asynchronous motors, these motors operate through electromagnetic induction. The stator's winding generates a magnetic field, inducing eddy currents in the rotor, which features a short-circuited winding. Alternating current creates a revolving flux that opposes the rotor's flux, causing the rotor to try to catch up with the stator's rotating magnetic field. This can be single-phase, two-phase, or three-phase alternating current. The slip, defined as the difference between the stator's synchronous speed and the actual rotor speed, is given by the formula:
+ \textbf{ AC asynchronous Induction Motors:} Also referred to as asynchronous motors, these motors operate through electromagnetic induction. The stator's winding generates a magnetic field, inducing eddy currents in the rotor, which features a short-circuited winding. Alternating current creates a revolving flux that opposes the rotor's flux, causing the rotor to try to catch up with the stator's rotating magnetic field. This can be single-phase, two-phase, or three-phase alternating current. The slip, defined as the difference between the stator's synchronous speed and the actual rotor speed, is given by the formula:
 \[ \text{Slip} = \frac{{N_s - N_r}}{{N_s}} \]
 
 where \( N_s \) is the synchronous speed and \( N_r \) is the rotor's speed.
@@ -681,6 +681,41 @@ The rotor of the motor can be designed using a squirrel cage, which includes a c
 Induction motors have a simple and rugged design, are cost-effective, and require minimal maintenance. They don't need additional starting motors. Since only the stator is connected to the circuit, electromagnetic flux can be varied by adjusting the voltage, which, in turn, varies the torque linearly. Speed can be adjusted by altering the frequency of the AC power. This can be achieved using variable frequency drives, frequency converters, frequency generators, or motor-generator sets. \newline
 
 Thanks to their high torque, they are used in various industrial applications to drive pumps, compressors, and conveyors. They are also commonly found in HVAC systems for ventilation and air conditioning. Furthermore, they serve as traction motors in electric traction for trains and electric vehicles. \newline
+
+
+
+\textbf{AC synchronous Induction motors :} operate based on the principle of synchronism, which means their rotation is synchronized with the frequency of the current. \newline
+\[
+N_s = \frac{120 \cdot f}{P}
+\]
+Where:
+\(N_s\) = Synchronous speed (RPM)
+\(f\) = Frequency of the AC power supply (Hz)
+\(P\) = Number of poles in the motor
+
+The stator is equipped with coils that are induced with a three-phase current. Conversely, the rotor is excited with direct current, thus generating magnetic fields with alternating polarity. When additional coils are incorporated into both the rotor and stator, the motor tends to operate at lower speeds but deliver higher torque. \newline
+\[
+T = k \cdot \phi \cdot I_a \cdot \sin(\delta)
+\]
+Where:
+\(T\) = Developed torque
+\(k\) = Constant
+\(\phi\) = Rotor flux produced by the excitation current
+\(I_a\) = Armature current
+\(\delta\) = Power factor angle
+
+These motors find applications in scenarios demanding precise speed control, such as clocks and timming devices, radars and are also utilized in electric vehicles, such as those manufactured by Lucid Motors. \newline
+
+One remarkable feature of synchronous motors is their ability to maintain a constant speed even when subjected to varying loads. Nevertheless, if they encounter loads beyond their capacity to handle or if they are subjected to external forces, the magnetic fields may lose synchronization, leading to the rotor coming to a halt. \newline
+
+Various strategies, such as squirrel cage rotors and high speed sensors, have been devised to mitigate this issue.\newline
+
+\textbf{asynchronous Motors:} are among the most reliable motors due to thier minimal number of components
+
+\vspace*{3pt}
+
+
+
 
 \end{flushleft}
 
